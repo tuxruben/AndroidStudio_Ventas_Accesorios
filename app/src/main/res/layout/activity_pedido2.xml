@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="ShopPC"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1" />
+        <TextView
+            android:text="Registra tu pedido"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USB"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Cantidad"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tb8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <CheckBox
+                android:id="@+id/chk8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8 GB" />
+            <EditText android:id="@+id/edt8" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:ems="10" android:inputType="number">
+                <requestFocus />
+            </EditText>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tb16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <CheckBox
+                android:id="@+id/chk16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16 GB" />
+            <EditText
+                android:id="@+id/edt16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tb32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <CheckBox
+                android:id="@+id/chk32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32 GB" />
+            <EditText
+                android:id="@+id/edt32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+        </TableRow>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MICRO SD"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TableRow
+            android:id="@+id/tbM8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <CheckBox
+                android:id="@+id/chkM8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8 GB" />
+            <EditText android:id="@+id/edtM8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number">
+                <requestFocus />
+            </EditText>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tbM16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <CheckBox
+                android:id="@+id/chkM16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16 GB" />
+            <EditText
+                android:id="@+id/edtM16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tbM32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <CheckBox
+                android:id="@+id/chkM32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32 GB" />
+            <EditText
+                android:id="@+id/edtM32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+        </TableRow>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtotal: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.0"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <Button
+                android:id="@+id/btnCalcular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calcular"
+                android:onClick="btnCalcularClick" />
+            <Button
+                android:id="@+id/btnPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Revisar Pedido"
+                android:onClick="btnPedidoClick" />
+        </TableRow>
+    </LinearLayout>
+</ScrollView>
